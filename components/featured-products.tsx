@@ -37,7 +37,7 @@ const FeaturedProducts = () => {
                     <Card className="py-4 border border-gray-200 shadow-none">
                       <CardContent className="relative flex items-center justify-center px-4 py-2">
                         {imageUrl ? (
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          // eslint-disable-next-line @next/next/no-img-element 
                           <img
                             src={imageUrl}
                             alt={productName}
