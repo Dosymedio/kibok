@@ -3,7 +3,7 @@ import { useGetCategoryProduct } from "@/api/getCategoryProduct"
 
 import { ResponseType } from "@/types/response"
 import { Separator } from "@radix-ui/react-separator"
-import { useParams, useRouter } from "next/navigation"
+import { useParams } from "next/navigation"
 import FiltesControlCategory from "./components/filters-controls-category"
 import SkeletonSchema from "@/components/ui/skeletonSchema"
 import ProductCard from "./components/product-card"
