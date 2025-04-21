@@ -21,7 +21,7 @@ const CarouselProduct = (props: CarouselProductProps) => {
                                 src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${image.url}`} 
                                 alt="Image product"
                                 className="rounded-lg"
-                            />
+                            />{/* eslint-disable-line @next/next/no-img-element */}
                         </CarouselItem>
                     )}
                 </CarouselContent>

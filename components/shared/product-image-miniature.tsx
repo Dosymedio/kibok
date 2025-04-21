@@ -13,7 +13,7 @@ const ProductImageMiniature = (props: ProductImageMiniatureProps) => {
                 <img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${url}`} 
                 alt="Product"
                 className="w-24 h-24 overflow-hidden rounded-md sm:w-auto sm:h-32" 
-                />
+                />{/* eslint-disable-line @next/next/no-img-element */}
         </div>
      );
 }

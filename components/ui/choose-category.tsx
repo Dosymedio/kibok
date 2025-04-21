@@ -25,7 +25,7 @@ const ChooseCategory = () => {
                 src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${category.mainImage?.url}`}
                 alt={category.categoryName}
                 className="max-w-[270px] transition duration-300 ease-in-out rounded-lg hover:scale-110"
-              />
+              />{/* eslint-disable-line @next/next/no-img-element */}
               <p className="absolute w-full py-2 text-lg font-bold text-center text-white bottom-5 backdrop-blur-lg">
                 {category.categoryName}
               </p>

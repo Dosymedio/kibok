@@ -15,7 +15,6 @@ export default function Page() {
   const { categorySlug } = params
   const { result, loading}: ResponseType  = useGetCategoryProduct(categorySlug)
   const [filterOrigin, setFilterOrigin] = useState('')
-  const router = useRouter()  
   console.log(result)
   const filteredProducts = result !== null && !loading && (
     filterOrigin === '' 

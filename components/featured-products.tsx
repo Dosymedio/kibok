@@ -41,7 +41,7 @@ const FeaturedProducts = () => {
                             src={imageUrl}
                             alt={productName}
                             className="w-full h-auto object-cover"
-                          />
+                          />{/* eslint-disable-line @next/next/no-img-element */}
                         ) : (
                           <div className="flex items-center justify-center w-full h-40 bg-gray-100 text-gray-400">
                             <Images className="w-10 h-10" />
