@@ -13,7 +13,6 @@ interface CartItemProps{
 
 const CartItem = (props: CartItemProps) => {
     const {product} = props
-    const router = useRouter()
     const {removeItem} = useCart()
 
 

@@ -3,7 +3,6 @@
 import { useGetFeaturedProducts } from "@/api/useGetFeaturedProduct";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 import SkeletonSchema from "./ui/skeletonSchema";
-import { ProductType } from "@/types/products";
 import { Card, CardContent } from "./ui/card";
 import { Expand, Images, ShoppingCart } from "lucide-react";
 import IconButton from "./icon-button";
@@ -25,7 +24,7 @@ const FeaturedProducts = () => {
 
           {result.length > 0 &&
             result.map((product) => {
-              const { id, slug, images, productName, taste, origin } = product;
+              const { id, slug, productName, taste, origin } = product;
 
               const imageUrl = product.images?.[0]?.url
                 ? `${process.env.NEXT_PUBLIC_BACKEND_URL}${product.images[0].url}`
