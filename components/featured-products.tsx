@@ -15,7 +15,7 @@ const FeaturedProducts = () => {
   const {addItem} = useCart()  
   
   return (
-    <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">
+    <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">  
       <h3 className="px-6 text-3xl sm:pb-8">Productos destacados</h3>
 
       <Carousel>
@@ -37,11 +37,12 @@ const FeaturedProducts = () => {
                     <Card className="py-4 border border-gray-200 shadow-none">
                       <CardContent className="relative flex items-center justify-center px-4 py-2">
                         {imageUrl ? (
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
                             src={imageUrl}
                             alt={productName}
                             className="w-full h-auto object-cover"
-                          />{/* eslint-disable-line @next/next/no-img-element */}
+                          />
                         ) : (
                           <div className="flex items-center justify-center w-full h-40 bg-gray-100 text-gray-400">
                             <Images className="w-10 h-10" />
