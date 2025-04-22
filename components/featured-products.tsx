@@ -8,6 +8,7 @@ import { Expand, Images, ShoppingCart } from "lucide-react";
 import IconButton from "./icon-button";
 import { useRouter } from "next/navigation";
 import { useCart } from "@/hooks/use-cart";
+import { ProductType } from "@/types/products";
 
 const FeaturedProducts = () => {
   const { loading, result } = useGetFeaturedProducts();
@@ -23,11 +24,11 @@ const FeaturedProducts = () => {
           {loading && <SkeletonSchema grid={3} />}
 
           {result.length > 0 &&
-            result.map((product) => {
+            result.map((product: ProductType) => {
               const { id, slug, productName, taste, origin } = product;
 
-              const imageUrl = product.images?.[0]?.url
-                ? `${process.env.NEXT_PUBLIC_BACKEND_URL}${product.images[0].url}`
+              const imageUrl = product.images?.[0]?.attributes.url
+                ? `${process.env.NEXT_PUBLIC_BACKEND_URL}${product.images?.[0]?.attributes.url}`
               : null;
 
 

@@ -33,7 +33,7 @@ const ProductCard = (props: ProductCardProps) => {
         <CarouselContent>
           {product.images?.map((image)=>(
             <CarouselItem key={image.id} className="group">
-               <img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${image.url}`} alt="Image" className="rounded=xl"/> {/* eslint-disable-line @next/next/no-img-element */}
+               <img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${image.attributes.url}`} alt="Image" className="rounded=xl"/> {/* eslint-disable-line @next/next/no-img-element */}
                 <div className="absolute w-full px-6 transition duration-200 opacity-0 group-hover:opacity-100 bottom-5">
                     <div className="flex justify-center gap-x-6">
                       <IconButton onClick={() => router.push(`product/${product.slug}`)} 

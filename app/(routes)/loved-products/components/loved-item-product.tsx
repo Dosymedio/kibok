@@ -25,7 +25,7 @@ const LovedItemsProduct = (props: LovedItemsProductProps) => {
 
     return ( 
         <li className="flex py-6 border-b">
-            <ProductImageMiniature slug={product.slug} url={product.images?.[0].url}/>
+            <ProductImageMiniature slug={product.slug} url={product.images?.[0].attributes.url}/>
             <div className="flex  justify-between flex-1 px-6">
                 
                     <div>

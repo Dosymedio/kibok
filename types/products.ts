@@ -13,7 +13,7 @@ export type ProductType = {
     attributes: {
       url: string;
     };
-  };
+  }[];
   category?: {
     id: number;
     categoryName: string;
